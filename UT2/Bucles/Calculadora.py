@@ -1,3 +1,5 @@
+from random import Random
+
 while True:
     print("Calculadora")
     print("1. Suma")
@@ -35,8 +37,8 @@ while True:
             operador = "÷"
 
         print(f"\n Resultado: {num1} {operador} {num2} = {resultado}")
-
     except ValueError as e:
         print(e)
     except Exception as e:
         print(f"\n Error: {e}")
+

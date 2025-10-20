@@ -1,5 +1,4 @@
 import random
-from sys import exception
 
 while True:
     try:
