@@ -1,19 +1,24 @@
 import random
 
-while True:
-    try:
-        aleatorio = random.randint(0, 100)
-        print(aleatorio)
+def aleatorio():
+    while True:
+        try:
+            aleatorio = random.randint(0, 100)
+            print(f"Número aleatorio generado: {aleatorio}")
 
-        numero = int(input("Introduce un numero: "))
+            numero = int(input("Introduce un número (0-100): "))
 
-        if aleatorio == numero:
-            print("Acertaste")
-            break
-        else:
-            print("No acertaste")
-    except ValueError as e:
-        print(e)
+            if aleatorio == numero:
+                print("¡Acertaste!")
+                break
+            else:
+                print("No acertaste, intenta otra vez.")
+        except ValueError as e:
+            print("Error: debes introducir un número válido.")
+
+
+aleatorio()
+
 
 
 
